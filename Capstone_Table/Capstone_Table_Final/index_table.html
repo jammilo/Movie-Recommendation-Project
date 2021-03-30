@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Movie Data</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+    <!-- Our CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/style_table.css">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
+    <!-- Bootswatch -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/sketchy/bootstrap.min.css">
+    <script type="text/javascript" src="/static/js/logic_table.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Movie Data</a>
+                </div>
+            </div>
+        </nav>
+        <div class="hero text-center">
+            <h1></h1>
+            <p id="headline">Movie Data</p>
+        </div>
+        <div class="container">
+            <div class="row margin-top-50">
+                <div class="col-md-2">
+                    <aside class="filters">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Filter Search</div>
+                            <div class="panel-body">
+                                <form id="form">
+                                    <div class="form-group">
+                                        <ul class="list-group" id="filters">
+                                            <br>
+                                            <li class="filter list-group-item">
+                                                <label for="date">Type Movie Title</label>
+                                                <input class="form-control" id="titleInput" type="text" placeholder="title here">
+                                            </li>
+                                            <br>
+                                            <li class="filter list-group-item">
+                                                <label for="date">Choose a Genre</label>
+                                                <select class="form-conntrol" id="genreInput">
+                                                    <option value="">All</option>
+                                                    <option value="Comedy">Comedy</option>
+                                                    <option value="Action">Action</option>
+                                                    <option value="War">War</option>
+                                                    <option value="Adventure">Adventure</option>
+                                                    <option value="Romance">Romance</option>
+                                                    <option value="Thriller">Thriller</option>
+                                                    <option value="Drama">Drama</option>
+                                                    <option value="Children">Children</option>
+                                                    <option value="Animation">Animation</option>
+                                                    <option value="Fantasy">Fantasy</option>
+                                                    <option value="Musical">Musical</option>
+                                                    <option value="Crime">Crime</option>
+                                                    <option value="IMAX">IMAX</option>
+                                                    <option value="Sci-Fi">Sci-Fi</option>
+                                                    <option value="Mystery">Mystery</option>
+                                                    <option value="Western">Western</option>
+                                                    <option value="Horror">Horror</option>
+                                                    <option value="Documentary">Documentary</option>
+                                                    <option value="Film-Noir">Film-Noir</option>
+                                                </select>
+                                            </li>
+                                            <br>
+                                            <!-- <li class="filter list-group-item">
+                                                <label for="date">Rating</label>
+                                                <select class="form-conntrol" id="ratingInput">
+                                                    <option value="">All</option>
+                                                    <option value= 5 >5 stars rating</option>
+                                                    <option value="omnivore">4 stars rating</option>
+                                                    <option value="carnivore">3 stars rating</option>
+                                                    <option value="carnivore">3 stars rating</option>
+                                                    <option value="carnivore">2 stars rating</option>
+                                                    <option value="herbivore">1 star rating and less</option>
+                                                </select>
+                                            </li>
+                                            <br> -->
+                                        </ul>
+                                    </div>
+                                    <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                                </form>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-md-10">
+                    <div id="table-area" class="">
+                        <table id="ufo-table" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="table-head">Movie Title</th>
+                                    <th class="table-head">Genres</th>
+                                    <th class="table-head">Number of Rating User</th>
+                                    <th class="table-head">Average Rating</th>
+                                    <th class="table-head">Average Age of User</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <span class="bottom">Movies</span>
+        </footer>
+    </div>
+
+</body>
+
+</html>
