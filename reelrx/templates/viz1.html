@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ReelRx: User Viz</title>
+    <!-- Bootswatch -->
+
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
+    <!-- Our JS -->
+    <script type="text/javascript" src="static/js/viz1.js"></script>
+
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="reelrx">ReelRx
+            <span class="sr-only">(current)</span>
+          </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus">About Us</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Data</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="viz1">User Viz</a>
+                        <a class="dropdown-item" href="viz2">Genre Viz</a>
+                        <a class="dropdown-item" href="datatable">Table</a>
+                        <a class="dropdown-item" href="model">Model Info</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- The div where we will inject our Tableau -->
+    <br>
+    <div class="card container-fluid" style="margin-top:25px; margin-bottom: 25px;">
+        <div style="text-align: center;">
+        </div>
+    </div>
+    <hr>
+    <div class="card container-fluid" style="margin-top:25px; margin-bottom: 25px; text-align: center;">
+
+        <div style="display: inline-block;">
+            <button type="button" class="btn btn-primary" id="pdf">PDF</button>
+            <button type="button" class="btn btn-primary" id="image">Image</button>
+
+            <button type="button" class="btn btn-primary" id="data">Data</button>
+        </div>
+    </div>
+
+    <div id="tableauParent" class="container-fluid">
+        <div style="height:700px" id="tableauViz"></div>
+    </div>
+</body>
+
+</html>

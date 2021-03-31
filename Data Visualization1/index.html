@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau POC</title>
+    <!-- Bootswatch -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/darkly/bootstrap.min.css" crossorigin="anonymous">
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
+    <!-- Our JS -->
+    <script type="text/javascript" src="static/js/app.js"></script>
+
+</head>
+
+<body>
+    <!-- The div where we will inject our Tableau -->
+    <div class="card container-fluid" style="margin-top:25px; margin-bottom: 25px;">
+        <div style="text-align: center;">
+        </div>
+    </div>
+    <hr>
+    <div class="card container-fluid" style="margin-top:25px; margin-bottom: 25px; text-align: center;">
+        <h3>Toolbar</h3>
+        <div style="display: inline-block;">
+            <button type="button" class="btn btn-primary" id="pdf">PDF</button>
+            <button type="button" class="btn btn-primary" id="image">Image</button>
+
+            <button type="button" class="btn btn-primary" id="data">Data</button>
+        </div>
+    </div>
+
+    <div id="tableauParent" class="container-fluid">
+        <div style="height:700px" id="tableauViz"></div>
+    </div>
+</body>
+
+</html>

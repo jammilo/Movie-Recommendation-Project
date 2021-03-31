@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <meta charset="utf-8">
+    <title>ReelRx</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Boostrap -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/minty/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700">
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- JS -->
+
+
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="reelrx">ReelRx
+                <span class="sr-only">(current)</span>
+              </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus">About Us</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Data</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="viz1">User Viz</a>
+                        <a class="dropdown-item" href="viz2">Genre Viz</a>
+                        <a class="dropdown-item" href="datatable">Table</a>
+                        <a class="dropdown-item" href="model">Model Info</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+        <img class="w3-image" src="/static/images/homepage.jpg" alt="movies" width="1500" height="800">
+        <div class="w3-display-middle w3-margin-top w3-center">
+            <a href="reelrx"> <img class="w3-image" src="/static/images/logo.jpg" alt="icon"></a>
+            <h1 class="w3-xlarge w3-text-white"><span class="w3-black w3-opacity-min"><b>Prescribing Movies for You</b></span></h1>
+        </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content w3-padding" style="max-width:1564px">
+
+        <!-- About Section -->
+        <div class="w3-container w3-padding-32" id="about">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">What is <a href="reelrx">ReelRx</a>?</h3>
+            <p><a href="reelrx">ReelRx</a> is a machine learning powered app that provides quick movie recommendations for users based on a single input: Simply name a movie you enjoy!
+            </p>
+            <p>The app utilizes data from the <a href="https://grouplens.org/datasets/movielens/1m/">MovieLens 1M dataset</a>. The dataset contain 1,000,209 anonymous ratings of approximately 3,900 movies made by 6,040 MovieLens users who joined MovieLens
+                in 2000. </p>
+            <p>In conjunction with
+                <a href="https://www.themoviedb.org/"> <img class="w3-image" src="/static/images/blue_long_tmdb.svg" width="200"></a>, ReelRx gets details like where to stream, rent, or buy movies it recommends.</p>
+            <p>Find your <a href="reelrx">prescription</a> and get watching!</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- End page content -->
+    </div>
+
+</body>
+
+</html>
